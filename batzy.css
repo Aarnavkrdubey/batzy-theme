@@ -2217,36 +2217,36 @@ button {
 }
 
 /*custom #Batzy-card theme card*/
-#Batzy-card .bd-name {
-    font-size: 70px;
+##Batzy-card-card .bd-name {
+    font-size: 100px;
     text-align: left;
-    content: "Batzy";
 }
 
-#Batzy-card .bd-name::after {
+##Batzy-card-card .bd-name::after {
     font-size: 20px;
     content: "activated";
     display: block;
-    margin-top: -15px;
-    margin-left: 10px;
+    margin-top: -20px;
+    margin-left: 15px;
 }
 
-#Batzy-card .bd-meta {
-    margin-left: -50px;
+##Batzy-card-card .bd-meta {
+    margin-left: 15px;
     bottom: 25px;
+    color: rgb(226, 226, 226);
 }
 
-#Batzy-card-card {
+##Batzy-card-card {
     border: 2px solid var(--accentcolorV2);
     box-shadow: 0 0 5px var(--accentcolorV2);
 }
 
-#Batzy-card-card .bd-addon-header {
+##Batzy-card-card .bd-addon-header {
     border-bottom: 2px solid var(--accentcolorV2);
     box-shadow: 0 0 5px var(--accentcolorV2);
 }
 
-#Batzy-card-card > *:not(#a#B) {
+##Batzy-card-card > *:not(#a#B) {
     background: rgba(var(--accentcolor), .2) !important;
 }
 
@@ -2254,20 +2254,20 @@ button {
     display: none;
 }
 
-#Batzy-card-card [href='https\:\/\/github.com/warrayquipsome/#Batzy-card'] {
+##Batzy-card-card [href='https\:\/\/github.com/warrayquipsome/#Batzy-card'] {
     color: #fff !important;
 }
 
-#Batzy-card-card [href='DrfX6286kF'] {
+##Batzy-card-card [href='DrfX6286kF'] {
     color: #fff !important;
 }
 
-#Batzy-card-card .bd-name {
+##Batzy-card-card .bd-name {
     font-size: 70px;
     text-align: left;
 }
 
-#Batzy-card-card .bd-name::after {
+##Batzy-card-card .bd-name::after {
     font-size: 20px;
     content: "activated";
     display: block;
@@ -2275,7 +2275,7 @@ button {
     margin-left: 10px;
 }
 
-#Batzy-card-card .bd-meta {
+##Batzy-card-card .bd-meta {
     margin-left: -50px;
     bottom: 25px;
 }
