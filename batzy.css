@@ -2222,6 +2222,9 @@ button {
     text-align: left;
     content: "Batzy";
 }
+#Batzy-card .bd-name::before {
+    content: "Batzy";
+}
 
 #Batzy-card .bd-name::after {
     font-size: 20px;
