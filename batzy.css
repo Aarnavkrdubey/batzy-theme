@@ -8,18 +8,18 @@
 
 /****ADDONS****/
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
-@import url("https://warrayquipsome.github.io/#Batzy-card/#Batzy-cardTag.css");
-@import url("https://warrayquipsome.github.io/#Batzy-card/Addons/SettingsModalEdited.css");
+@import url("https://warrayquipsome.github.io/Chillax/ChillaxTag.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/SettingsModalEdited.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/AccountDetailsGrid.css");
 @import url("https://crearts-community.github.io/Friends-Grid/theme.css");
-@import url("https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");
 
-/****#Batzy-card COMPONENTS****/
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/WindowsButtons.css');
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/UserArea.css');
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/Embeds.css');
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/ChatArea.css');
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/ChannelHeader.css');
-@import url('https://warrayquipsome.github.io/#Batzy-card/Components/EmojiPicker.css');
+/****CHILLAX COMPONENTS****/
+@import url("https://warrayquipsome.github.io/Chillax/Components/WindowsButtons.css");
+@import url("https://warrayquipsome.github.io/Chillax/Components/UserArea.css");
+@import url("https://warrayquipsome.github.io/Chillax/Components/Embeds.css");
+@import url("https://warrayquipsome.github.io/Chillax/Components/ChatArea.css");
+@import url("https://warrayquipsome.github.io/Chillax/Components/ChannelHeader.css");
+@import url("https://warrayquipsome.github.io/Chillax/Components/EmojiPicker.css");
 
 /***TRANSPARENT CODES***/
 /**transparent part LVL I**/
@@ -89,7 +89,7 @@
 ::-webkit-scrollbar-thumb {
     border: none !important;
     background-clip: content-box !important;
-    background: var(--#Batzy-card-scroller-color) !important;
+    background: var(--chillax-scroller-color) !important;
 }
 
 /*transparent call background*/
@@ -844,7 +844,7 @@ html.theme-light .mentioned__5126c:hover {
     border-radius: 30px;
 }
 
-/*#Batzy-card appearance theme*/
+/*chillax appearance theme*/
 html.theme-dark {
     --cl-appearance: "Dark";
 }
@@ -854,9 +854,14 @@ html.theme-light {
 }
 
 #app-mount .info__2debe .line__2debe:last-child:after {
-    content: "#Batzy-card " var(--cl-appearance) " 🎮";
+    content: "Batzy " var(--cl-appearance) " 🦇";
     display: block;
+    font-family: "Monoton", cursive; /* Bat-themed font, already imported */
+    color: #a188ff;                  /* Batzy purple */
+    text-shadow: 0 1px 13px #501da6;
+    letter-spacing: 2px;
 }
+
 
 /*custom bd window edit*/
 .floating-window {
@@ -1069,7 +1074,7 @@ div[class*="wrapper__44b0c"][aria-label*="Online"]
 > div:nth-child(2)
 [role="radiogroup"]
 .item-2idW98:nth-child(3) {
-    background: url("https://cdn.discordapp.com/attachments/934719923735904257/990559275145384007/#Batzy-card_sync.jpg?size=4096") center/cover,
+    background: url("https://cdn.discordapp.com/attachments/934719923735904257/990559275145384007/chillax_sync.jpg?size=4096") center/cover,
     var(--background-primary);
 }
 
@@ -1149,15 +1154,15 @@ svg {
     box-shadow: 0 0 10px 2px #ff2d54;
 }
 
-/*#Batzy-card squad font and colour change*/
-[href="https\:\/\/github.com/warrayquipsome/#Batzy-card#Authors"] {
+/*chillax squad font and colour change*/
+[href="https\:\/\/github.com/warrayquipsome/Chillax#Authors"] {
     font-family: "Libre Barcode 128 Text";
     color: rgb(255, 161, 161) !important;
     font-weight: 400;
     font-size: 25px;
 }
 
-[href="https\:\/\/github.com/warrayquipsome/#Batzy-card#Authors"]:hover {
+[href="https\:\/\/github.com/warrayquipsome/Chillax#Authors"]:hover {
     font-family: "Libre Barcode 128";
     color: rgb(255, 161, 161) !important;
     font-weight: 400;
@@ -1362,7 +1367,7 @@ html.theme-light .inline {
 
 /*disable and delete account button design*/
 .children__7bffb .colorRed__201d5 {
-    width: 140px;
+    /*width: 140px;*/
     height: 45px;
     font-family: "Roboto" !important;
     text-transform: uppercase;
@@ -1401,9 +1406,9 @@ html.theme-light .children__7bffb .colorRed__201d5:hover {
     color: rgb(255, 255, 255) !important;
 }
 
-.children__7bffb .colorRed__201d5 {
-    font-size: 0px !important;
-}
+/*.children__7bffb .colorRed__201d5 {*/
+/*    font-size: 0px !important;*/
+/*}*/
 
 .children__7bffb .disableButton_d286c5.colorRed__201d5::before {
     content: "Disable";
@@ -2216,58 +2221,49 @@ button {
     opacity: 0 !important;
 }
 
-/*custom #Batzy-card theme card*/
-##Batzy-card-card .bd-name {
+/* Batzy card styling replacing Chillax card */
+#Batzy-card .bd-name {
     font-size: 100px;
     text-align: left;
 }
 
-##Batzy-card-card .bd-name::after {
+#Batzy-card .bd-name::after {
     font-size: 20px;
-    content: "activated";
+    content: "bat mode activated 🦇";
     display: block;
     margin-top: -20px;
     margin-left: 15px;
 }
 
-##Batzy-card-card .bd-meta {
-    margin-left: 15px;
-    bottom: 25px;
-    color: rgb(226, 226, 226);
+#Batzy-card {
+    border: 2px solid #a188ff;
+    box-shadow: 0 0 8px #501da6;
 }
 
-##Batzy-card-card {
-    border: 2px solid var(--accentcolorV2);
-    box-shadow: 0 0 5px var(--accentcolorV2);
+/* Author/squad GitHub link styling */
+[href="https\\:\/\/github.com/your-profile/Batzy#Authors"] {
+    font-family: "Monoton";
+    color: #a188ff !important;
+    font-weight: 400;
+    font-size: 25px;
 }
 
-##Batzy-card-card .bd-addon-header {
-    border-bottom: 2px solid var(--accentcolorV2);
-    box-shadow: 0 0 5px var(--accentcolorV2);
+/* Optional welcome message in Discord body */
+body:before {
+    content: "🦇 Welcome to Batzy, " var(--user-name) "!";
+    /* Add other styles from your original theme here as needed */
 }
 
-##Batzy-card-card > *:not(#a#B) {
-    background: rgba(var(--accentcolor), .2) !important;
-}
-
-##Batzy-card-card .bd-description {
-    display: none;
-}
-
-##Batzy-card-card [href='https\:\/\/github.com/warrayquipsome/#Batzy-card'] {
+#Chillax-card [href='DrfX6286kF'] {
     color: #fff !important;
 }
 
-##Batzy-card-card [href='DrfX6286kF'] {
-    color: #fff !important;
-}
-
-##Batzy-card-card .bd-name {
+#Chillax-card .bd-name {
     font-size: 70px;
     text-align: left;
 }
 
-##Batzy-card-card .bd-name::after {
+#Chillax-card .bd-name::after {
     font-size: 20px;
     content: "activated";
     display: block;
@@ -2275,16 +2271,16 @@ button {
     margin-left: 10px;
 }
 
-##Batzy-card-card .bd-meta {
+#Chillax-card .bd-meta {
     margin-left: -50px;
     bottom: 25px;
 }
 
-html.theme-dark ##Batzy-card-card .bd-meta {
+html.theme-dark #Chillax-card .bd-meta {
     color: rgb(226, 226, 226);
 }
 
-html.theme-light ##Batzy-card-card .bd-meta {
+html.theme-light #Chillax-card .bd-meta {
     color: rgb(0, 0, 0);
 }
 
@@ -2788,11 +2784,11 @@ html.theme-dark .container__0a12b {
 
 /* Custom server icons */
 html.theme-dark img[src="https://cdn.discordapp.com/icons/881453188509753384/0d46710d71eba9f9303890383d636489.webp?size=96"] {
-    content: url("https://raw.githubusercontent.com/#Batzy-card-ORG/Images/refs/heads/main/blacklogo.png");
+    content: url("https://raw.githubusercontent.com/Chillax-ORG/Images/refs/heads/main/blacklogo.png");
 }
 
 html.theme-light img[src="https://cdn.discordapp.com/icons/881453188509753384/0d46710d71eba9f9303890383d636489.webp?size=96"] {
-    content: url("https://raw.githubusercontent.com/#Batzy-card-ORG/Images/refs/heads/main/whitelogo.png");
+    content: url("https://raw.githubusercontent.com/Chillax-ORG/Images/refs/heads/main/whitelogo.png");
 }
 
 /* Fix colors due to `.theme-dark` custom properties being applied in light mode */
@@ -2891,4 +2887,17 @@ html.theme-light .modeSelected__2ea32 .name__2ea32 {
 /* Fix for VC call items bg */
 .buttonSection__1405b {
     background: none !important;
+}
+
+/* transparent background fix for new `Boost Goal Page` */
+.container__89463 {
+    background-color: transparent !important;
+}
+
+.contentContainer__89463{
+    background-color: transparent !important;
+}
+
+.sidebarContainer__89463 {
+    background-color: transparent !important;
 }
